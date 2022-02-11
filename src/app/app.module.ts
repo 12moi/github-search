@@ -5,17 +5,23 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SearchFormComponent } from './search-form/search-form.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { NgForm, NgModel} from '@angular/forms';
+import { FormsModule, NgForm, NgModel} from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { RepositoryComponent } from './repository/repository.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchFormComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    RepositoryComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
