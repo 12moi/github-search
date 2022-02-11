@@ -1,6 +1,24 @@
 # Github Search
-This is a single page application for searching github users and repositories. The site uses the Github API to perform searches on Github, and display the results to the users.The website is made using angular js framework, and uses components, custom directives, custom pipes, routing modules and classes to make the finished product.
 
+## Author
+Moi Shadrack
+
+## Description
+This is a single page application for searching github users and repositories. The site uses the Github API to perform searches on Github, and display the results to the users.The website is made using angular js framework, and uses components, custom directives, custom pipes, routing modules and classes to make the finished product.
+ 
+ ### Live Page
+https://12moi.github.io/github-search/
+
+This project was generated with Angular CLI version 13.1.4.
+
+### Installation / setup
+Open Terminal {Ctrl+Alt+T}
+
+git clone https://github.com/12moi/github-search.git
+
+cd github-search
+
+code 
 ## Technologies Used
 HTML
 CSS
@@ -39,4 +57,8 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
+### Contact information
+If you have any question or contributions, please email me at [moi.shadrack@student.moringaschoolgmail.com]
 
+### Licence
+MIT Licence: Copyright (c) 2022 Moi Shadrack
