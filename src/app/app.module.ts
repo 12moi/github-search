@@ -8,13 +8,15 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { FormsModule, NgForm, NgModel} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RepositoryComponent } from './repository/repository.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchFormComponent,
     NotFoundComponent,
-    RepositoryComponent
+    RepositoryComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
