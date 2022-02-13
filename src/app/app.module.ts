@@ -9,6 +9,7 @@ import { FormsModule, NgForm, NgModel} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RepositoryComponent } from './repository/repository.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { UserComponent } from './user/user.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     SearchFormComponent,
     NotFoundComponent,
     RepositoryComponent,
-    NavbarComponent
+    NavbarComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
