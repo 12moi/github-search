@@ -8,6 +8,7 @@ import { UserComponent } from './user/user.component';
 
 
 const routes: Routes = [
+  
   {path:"user-profile", component:UserComponent},
   {path:"search-repo", component:RepositoryComponent},
   {path: "", redirectTo:"/user-profile", pathMatch:"full"},
@@ -18,4 +19,6 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
 exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule { 
+  
+}

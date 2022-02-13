@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Repos } from '../repos';
 import { UserServiceService } from '../user-service.service';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-repository',
@@ -9,7 +10,7 @@ import { UserServiceService } from '../user-service.service';
 })
 export class RepositoryComponent implements OnInit {
   repo!: Repos;
-  constructor( public repoService: UserServiceService ) { }
+  constructor( public repoService: UserServiceService, private http:HttpClient) { }
 
   repoSearch(searchName: any){
     this.repoService['getReopos'](searchName).then(
