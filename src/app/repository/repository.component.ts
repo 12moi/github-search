@@ -11,9 +11,9 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 export class RepositoryComponent implements OnInit {
   repo!: Repos;
   constructor( public repoService: UserServiceService, private http:HttpClient) { }
-
+ 
   repoSearch(searchName: any){
-    this.repoService['getReopos'](searchName).then(
+    this.repoService['getRepos'](searchName).then(
       (results: any)=>{
         this.repo =this.repoService['allRepos']
         console.log(this.repo);

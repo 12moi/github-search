@@ -12,6 +12,7 @@ export class UserComponent implements OnInit {
   user!: User;
   repo!: Repos;
   repoService: any;
+ 
   constructor(public myService: UserServiceService, private Repo: UserServiceService) {
     
   }
@@ -19,7 +20,7 @@ export class UserComponent implements OnInit {
     return User;
   }
   getUserRepo(){
-    return this.repo;
+    return this.Repo;
   }
   
   searchs(searchName: any) {
@@ -33,8 +34,8 @@ export class UserComponent implements OnInit {
     );
       this.repoService.getReopos(searchName).then(
         (results: any)=>{
-          this.repo =this.repoService.allRepos
-          console.log(this.repo);
+          this.Repo =this.repoService.allRepos
+          console.log(this.Repo);
         },
         (error: any)=>{
           console.log(error);
