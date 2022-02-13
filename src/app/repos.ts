@@ -1,6 +1,6 @@
 export class Repos {
     static results:any;
-    constructor(name:string, url:string, login:string, location:string, public_repos:number, followers:number, following:number, created_at:Date){
+    constructor(public name:string, public url:string, public login:string, public location:string, public public_repos:number, public followers:number, public  following:number, public  created_at:Date){
 
     }
 }

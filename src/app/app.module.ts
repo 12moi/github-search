@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { RepositoryComponent } from './repository/repository.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { UserComponent } from './user/user.component';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { UserComponent } from './user/user.component';
     NotFoundComponent,
     RepositoryComponent,
     NavbarComponent,
-    UserComponent
+    UserComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,

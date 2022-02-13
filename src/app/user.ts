@@ -1,5 +1,5 @@
 export class User {
-    constructor(name:string, description:string, created_at:Date, forks:number, watchers_count:number, language:string){
+    constructor(public name:string, public description:string, public created_at:Date, public forks:number,public watchers_count:number, public language:string){
 
     }
 }

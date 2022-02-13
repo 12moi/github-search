@@ -54,36 +54,34 @@
         <div class="card" appHighlight *ngFor="let repos of " style="width: 22rem;" class="repo">
           <div class="card-body" >
             <h5 class="card-title"><span class="top">Repo Name:</span> 
-                <!-- &nbsp;{{repos.name}}  -->
+                ;{{user.name}}  
             </h5>
             <div class="card-text">
               <hr>
-              <div class="desc"><span class="top">Description:</span> 
-                <!-- &nbsp;{{Repository.description}}  -->
-              </div>
+               <div class="desc"><span class="top">Description:</span> 
+                {{user.description}} 
+              </div> 
               <hr>
               <div class="card-subtitle mb-2">
                   <span class="top">Language: </span> 
-                  <!-- {{repository.language}} -->
+                   {{user.language}} 
               </div>
               <div class="card-subtitle mb-2"><span class="top">Created:&nbsp; <span id="created">
-                  <!-- {{repository.created_at | datePipe}}</span>
-                   &nbsp;  On:</span> &nbsp;{{repository.created_at | date}} -->
-              
-                </span>  
-                </span>
+                   {{user.created_at }}</span>
+                   &nbsp;  On:</span> &nbsp;{{user.created_at | date}} 
+               
               </div> 
             </div>
             </div>
             <div class="card-footer">
               <div class="btn-group" role="group" aria-label="Third group">
                 <button class="btn btn-sm btn-info"><i class="fa fa-eye" style="font-size:16px"></i> &nbsp;<span class="forks">
-                    <!-- {{repository.watchers_count}} -->
+                     {{user.watchers_count}} 
                 </span></button>
               </div>
               <div class="btn-group" role="group" aria-label="Third group">
                 <button class="btn btn-sm btn-outline-danger"><i class="fa fa-code-fork" style="font-size:16px"></i> &nbsp;<span class="forks">
-                    <!-- {{repos.fork}} -->
+                     {{user.forks}} 
                 </span></button>
               </div>
               <div class="btn-group" role="group" aria-label="Third group">
