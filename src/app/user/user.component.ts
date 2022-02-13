@@ -36,6 +36,7 @@ export class UserComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.searchs('12moi');
   }
 
 }
