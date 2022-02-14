@@ -1,7 +1,10 @@
 
 
 
-  
+  .container-fluid{
+    background-color: grey;
+    margin-bottom: 0%;
+  }
 .allrepos{
     display: flex;
     flex-wrap: wrap;

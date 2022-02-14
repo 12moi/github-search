@@ -13,15 +13,15 @@ export class RepositoryComponent implements OnInit {
   constructor( public repoService: UserServiceService, private http:HttpClient) { }
  
   repoSearch(searchName: any){
-    this.repoService['getRepos'](searchName).then(
-      (results: any)=>{
-        this.repo =this.repoService['allRepos']
-        console.log(this.repo);
-      },
-      (error: any)=>{
-        console.log(error);
-      }
-    );
+    // this.repoService['getRepos'](searchName).then(
+    //   (results: any)=>{
+    //     this.repo =this.repoService['allRepos']
+    //     console.log(this.repo);
+    //   },
+    //   (error: any)=>{
+    //     console.log(error);
+    //   }
+    // );
   }
 
  

@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { from } from 'rxjs';
 import { Repos } from '../repos';
  import { User } from '../user';
 import { UserServiceService } from '../user-service.service';
-
+import {  } from '@angular/common/http';
 @Component({
   selector: 'app-user',
   templateUrl: './user.component.html',
@@ -14,7 +15,10 @@ export class UserComponent implements OnInit {
   repo!: Repos;
   repoService: any;
  
-  constructor(public myService: UserServiceService, private Repo: UserServiceService) {
+  private username!:string;
+  private clientid!:'';
+  private clientSecret!:'';
+  constructor(public myService: UserServiceService, private Repo: UserServiceService, ) {
     
   }
   getUser(){
@@ -24,28 +28,12 @@ export class UserComponent implements OnInit {
     return this.Repo;
   }
   
-  searchs(searchName: any) {
-    this.myService['searchUSer'](searchName).then(
-      (success: any)=>{
-        this.user = this.myService['foundUser'];
-      },
-      (error: any)=>{
-        console.log(error)
-      }
-    );
-      this.repoService.getReopos(searchName).then(
-        (results: any)=>{
-          this.Repo =this.repoService.allRepos
-          console.log(this.Repo);
-        },
-        (error: any)=>{
-          console.log(error);
-        }
-      );
-  }
+   search(searchName: any) {
+    
+   }
 
   ngOnInit(): void {
-    this.searchs('12moi');
+    this.search('12moi');
   }
 
 }
