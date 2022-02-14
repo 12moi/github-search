@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Repos } from '../repos';
  import { User } from '../user';
 import { UserServiceService } from '../user-service.service';
+
 @Component({
   selector: 'app-user',
   templateUrl: './user.component.html',
