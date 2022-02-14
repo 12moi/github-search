@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { from } from 'rxjs';
 import { Repos } from '../repos';
  import { User } from '../user';
 import { UserServiceService } from '../user-service.service';
-import {  } from '@angular/common/http';
 @Component({
   selector: 'app-user',
   templateUrl: './user.component.html',
